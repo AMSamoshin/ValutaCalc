@@ -8,11 +8,10 @@ package valuts;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.math.BigDecimal;
 import java.util.HashSet;
 
 import java.util.Set;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -116,7 +115,9 @@ public class Valuts {
                         val = valutaValue(new String(nameVal));
                         if(valTo == val){
                             double coef = valTo.getValue(new String(nameVal));
-                            return valTo.getString(coef*valFrom.getValue(value));
+                            BigDecimal x = new BigDecimal(coef*valFrom.getValue(value));
+                            x = x.setScale(2, BigDecimal.ROUND_HALF_UP);
+                            return valTo.getString(x.doubleValue());
                         }
                     }
                 }

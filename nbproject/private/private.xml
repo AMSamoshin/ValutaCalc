@@ -3,13 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/konevgeni/Documents/NetBeansProjects/ValutaCalc/src/valuts/ValExcept.java</file>
-            <file>file:/C:/Users/konevgeni/Documents/NetBeansProjects/ValutaCalc/src/valuts/Euro.java</file>
-            <file>file:/C:/Users/konevgeni/Documents/NetBeansProjects/ValutaCalc/src/valuts/Valuts.java</file>
-            <file>file:/C:/Users/konevgeni/Documents/NetBeansProjects/ValutaCalc/src/valutacalc/ValutaCalc.java</file>
-            <file>file:/C:/Users/konevgeni/Documents/NetBeansProjects/ValutaCalc/src/valuts/Dollar.java</file>
-            <file>file:/C:/Users/konevgeni/Documents/NetBeansProjects/ValutaCalc/src/valuts/valuts.xml</file>
-            <file>file:/C:/Users/konevgeni/Documents/NetBeansProjects/ValutaCalc/src/valuts/valuta.java</file>
+            <file>file:/C:/Users/Andrey/Documents/ValutaCalc/src/valuts/Dollar.java</file>
+            <file>file:/C:/Users/Andrey/Documents/ValutaCalc/src/valuts/valuts.xml</file>
+            <file>file:/C:/Users/Andrey/Documents/ValutaCalc/src/valutacalc/ValutaCalc.java</file>
+            <file>file:/C:/Users/Andrey/Documents/ValutaCalc/src/valuts/Euro.java</file>
+            <file>file:/C:/Users/Andrey/Documents/ValutaCalc/src/valutacalc/log.log</file>
+            <file>file:/C:/Users/Andrey/Documents/ValutaCalc/src/valuts/ValExcept.java</file>
+            <file>file:/C:/Users/Andrey/Documents/ValutaCalc/src/valuts/Valuts.java</file>
+            <file>file:/C:/Users/Andrey/Documents/ValutaCalc/src/valuts/valuta.java</file>
         </group>
     </open-files>
 </project-private>
