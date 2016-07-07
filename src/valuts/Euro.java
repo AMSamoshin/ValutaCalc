@@ -18,7 +18,7 @@ class Euro implements valuta{
 
     @Override
     public String valRegExp() {
-        return "^(\\d+(?:[\\.,]\\d+)?)eur$";
+        return "^(-)?(\\d+(?:[\\.,]\\d(\\d)?)?)eur$";
     }
 
     @Override

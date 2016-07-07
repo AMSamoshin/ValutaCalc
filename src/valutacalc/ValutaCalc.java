@@ -21,11 +21,13 @@ public class ValutaCalc {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner in = new Scanner(System.in);
-        String c = in.nextLine();
-        try {
-            System.out.println(parse(c));
-        } catch (ValExcept ex) {
-            System.out.println(ex.getMessage());
+        while(true){
+            String c = in.nextLine();
+            try {
+                System.out.println(parse(c));
+            } catch (ValExcept ex) {
+                System.out.println(ex.getMessage());
+            }
         }
     }
     
@@ -49,13 +51,23 @@ public class ValutaCalc {
             }
         
         for(int i=0; i<str.length(); i++){
+            boolean unary = false;
             if(str.charAt(i) == '+'){
-                str = Valuts.sumVal(str.substring(0, i), str.substring(i+1));
+                str = Valuts.sumVal(parse(str.substring(0, i)), parse(str.substring(i+1)));
                 break;
             }
             if(str.charAt(i) == '-'){
-                str = Valuts.difVal(str.substring(0, i), str.substring(i+1));
-                break;
+                if(i != 0){
+                    try {
+                        parse(str.substring(0, i));
+                    } catch (ValExcept ex){
+                        unary = true;
+                    }
+                    if(!unary){
+                        str = Valuts.difVal(parse(str.substring(0, i)), parse(str.substring(i+1)));
+                        break;
+                    }
+                }
             }
 //            if(str.charAt(i) == '*'){
 //                str = Valuts.multVal(str.substring(0, i), str.substring(i+1));
@@ -66,6 +78,7 @@ public class ValutaCalc {
 //                break;
 //            }
         }
+        Valuts.isValuta(str);
         return str;
     }
 }

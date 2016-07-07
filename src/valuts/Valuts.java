@@ -11,6 +11,8 @@ import java.io.IOException;
 import java.util.HashSet;
 
 import java.util.Set;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -126,5 +128,9 @@ public class Valuts {
         } catch (IOException ex) {
             throw new ValExcept("Error read file config");
         }
+    }
+    
+    public static void isValuta(String value) throws ValExcept{
+            valutaValue(value);
     }
 }
